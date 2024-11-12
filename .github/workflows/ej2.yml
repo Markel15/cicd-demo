@@ -1,0 +1,15 @@
+name: Code Quality Check
+
+on: push
+permissions:
+ security-events: write
+
+jobs:
+  ej_2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Python Linter
+        uses: advanced-security/python-lint-code-scanning-action@v1
+        with:
+          linter: pylint
