@@ -1,6 +1,9 @@
 name: workflow Ej1
 
-on: push
+on: 
+  push:
+    branches:
+      - main
 
 jobs:
   ej_1:
