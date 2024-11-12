@@ -1,1 +1,0 @@
-printm,,m,("Hola mundo")
