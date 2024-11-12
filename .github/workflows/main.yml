@@ -1,15 +1,15 @@
-name: Primer workflow
+name: workflow Ej1
 
 on: push
 
 jobs:
-  hola_mundo:
+  ej_1:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Mostrar mensaje
-        run: echo "Hola GH Actions"
-      - name: Bajar código
+      - name: Descargar código
         uses: actions/checkout@v4
+      - name: Instalar pytest
+        run: pip install pytest
       - name: Probar código
-        run: python3 main.py
+        run: pytest test.py
