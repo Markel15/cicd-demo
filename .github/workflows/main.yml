@@ -10,6 +10,6 @@ jobs:
       - name: Mostrar mensaje
         run: echo "Hola GH Actions"
       - name: Bajar código
-        users: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: Probar código
         run: python3 main.py
