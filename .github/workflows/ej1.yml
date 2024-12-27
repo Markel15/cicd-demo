@@ -3,7 +3,7 @@ name: workflow Ej1
 on: 
   push:
     branches:
-      - main
+      - main # ej3
 
 jobs:
   ej_1:
